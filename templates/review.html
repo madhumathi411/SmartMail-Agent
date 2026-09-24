@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Human Review - SmartMail Agent</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <h2>📧 SmartMail Agent</h2>
+
+    <a href="/dashboard">Dashboard</a>
+
+</div>
+
+<div class="dashboard">
+
+    <h1>⚠️ Human Review</h1>
+
+    <div class="card">
+
+        <h3>Email Requires Human Review</h3>
+
+        <p>
+            The AI is not completely confident about the
+            correct response for this email.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📩 Customer Email</h3>
+
+        <p>
+            I need help with my account, but I am not sure
+            which information I should provide.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🤖 AI Analysis</h3>
+
+        <p>
+            <strong>Intent:</strong> General Enquiry
+        </p>
+
+        <p>
+            <strong>Priority:</strong> Important
+        </p>
+
+        <p>
+            <strong>Confidence:</strong> 61%
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>✏️ Human Decision</h3>
+
+        <textarea
+            rows="6"
+            style="width: 100%; padding: 10px;"
+            placeholder="Edit or write the final response here..."
+        ></textarea>
+
+        <br><br>
+
+        <button>
+            Approve Response
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
