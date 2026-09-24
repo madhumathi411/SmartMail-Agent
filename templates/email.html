@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email Analysis - SmartMail Agent</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <h2>📧 SmartMail Agent</h2>
+
+    <a href="/dashboard">Dashboard</a>
+
+</div>
+
+<div class="dashboard">
+
+    <h1>📨 Email Analysis</h1>
+
+    <div class="card">
+
+        <h3>Subject</h3>
+
+        <p>
+            Payment Issue - Duplicate Charge
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📩 Email Content</h3>
+
+        <p>
+            I was charged twice for my recent order.
+            Please help me resolve this issue.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🤖 AI Analysis</h3>
+
+        <p>
+            <strong>Intent:</strong> Payment Issue
+        </p>
+
+        <p>
+            <strong>Priority:</strong> Urgent
+        </p>
+
+        <p>
+            <strong>Confidence:</strong> 92%
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🧠 Suggested Action</h3>
+
+        <p>
+            Review the payment transaction and prepare
+            a response explaining the refund process.
+        </p>
+
+        <button>
+            Generate AI Response
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
