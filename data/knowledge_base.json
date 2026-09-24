@@ -1,0 +1,12 @@
+{
+    "payment": {
+        "refund_time": "5-7 business days"
+    },
+    "orders": {
+        "standard_delivery": "3-5 business days",
+        "express_delivery": "1-2 business days"
+    },
+    "support": {
+        "hours": "Monday-Friday"
+    }
+}
