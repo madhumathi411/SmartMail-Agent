@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SmartMail Inbox</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <h2>📧 SmartMail Agent</h2>
+
+    <a href="/dashboard">Dashboard</a>
+
+</div>
+
+
+<div class="dashboard">
+
+    <h1>📥 Email Inbox</h1>
+
+
+    <div class="card">
+
+        <h3>🔴 Payment Issue</h3>
+
+        <p>
+            I was charged twice for my recent order.
+            Please help me resolve this issue.
+        </p>
+
+
+        <form action="/analyze" method="POST">
+
+            <input
+                type="hidden"
+                name="email_text"
+                value="I was charged twice for my recent order. Please help me resolve this issue."
+            >
+
+            <button type="submit">
+                🤖 Analyze Email
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>📅 Meeting Request</h3>
+
+        <p>
+            Can we schedule a meeting to discuss the project?
+        </p>
+
+
+        <form action="/analyze" method="POST">
+
+            <input
+                type="hidden"
+                name="email_text"
+                value="Can we schedule a meeting to discuss the project?"
+            >
+
+            <button type="submit">
+                🤖 Analyze Email
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>📄 Document Request</h3>
+
+        <p>
+            Could you please send me the invoice
+            for my recent purchase?
+        </p>
+
+
+        <form action="/analyze" method="POST">
+
+            <input
+                type="hidden"
+                name="email_text"
+                value="Could you please send me the invoice for my recent purchase."
+            >
+
+            <button type="submit">
+                🤖 Analyze Email
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>⚠️ Security Issue</h3>
+
+        <p>
+            I noticed unusual activity on my account
+            and need help.
+        </p>
+
+
+        <form action="/analyze" method="POST">
+
+            <input
+                type="hidden"
+                name="email_text"
+                value="I noticed unusual activity on my account and need help."
+            >
+
+            <button type="submit">
+                🤖 Analyze Email
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
